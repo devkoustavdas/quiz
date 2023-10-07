@@ -12,6 +12,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     background-color: rgb(23, 23, 23);
     color: rgb(232, 232, 232);
+    overflow-y: scroll;
 }
 
 .quiz {
@@ -44,6 +45,19 @@ body {
     user-select: none;
 }
 
+.correctoptiondiv {
+    background-color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
+    border: solid 2px transparent;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
 .option:active, .button:active {
     border: solid 2px rgb(195, 195, 195);
 }
@@ -119,4 +133,8 @@ body {
 #subject::after {
     content: "Test";
     padding-left: 6px;
+}
+
+#answer-display {
+    display: none;
 }
