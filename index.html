@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <section>
+        <div class="quiz">
+            <div class="questions" id="subject">Physics</div>
+            <div class="option" id="chapter">Work, Power & Energy</div>
+        </div>
+    </section>
+    <section>
+        <div class="quiz">
+            <div class="questions"><span id="questionNo">0</span><span id="question">Instructions</span></div>
+            <div class="option" id="a" onclick="option('a')">Try all the questions</div>
+            <div class="option" id="b" onclick="option('b')">Click on NEXT>> to go to the next question</div>
+            <div class="option" id="c" onclick="option('c')">Once you go to the next question you cannot come back to the previous question</div>
+            <div class="option" id="d" onclick="option('d')">Answers will be shown after each question and also at the end of the test</div>
+        </div>
+        <div id="comment"></div>
+    </section>
+    <br><br>
+    <button type="button" id="next" class="button" onclick="next()">NEXT >></button>
+</body>
+<script src="script.js"></script>
+
+</html>
